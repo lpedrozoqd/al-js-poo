@@ -56,14 +56,17 @@ class StudentClassConPropiedades{
     constructor({name, 
         age, 
         cursosAprobados = [],
-        twitter,
-        instagram
+        twitter = undefined,
+        instagram = undefined,
+        approvedCourses = [],
+        learningPaththis = [],
     }){
-        this.name = name;
         this.age = age;
         this.cursosAprobados = cursosAprobados;
         this.twitter = twitter;
         this.instagram = instagram;
+        this.approvedCourses = approvedCourses;
+        this.learningPaththis = learningPaththis;
     }
 
     aprobarCurso(nuevoCurso){
